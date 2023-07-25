@@ -1,0 +1,32 @@
+
+
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #4d4d4d;
+
+}
+h1 {
+    font-weight: 800;
+    font-size: 2em;
+    text-transform: uppercase;
+    
+}
+.about-content{
+   padding: 1em;
+   color: white;
+   text-align: center;
+}
+   
+/* tablets screen */
+@media only screen and (min-width: 768px){
+    h1 {
+        text-align: left;
+    }
+    .about-content{
+        padding: 4em;
+      
+    }
+}

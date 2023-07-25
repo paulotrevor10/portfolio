@@ -1,0 +1,19 @@
+.error-container {
+    min-height: calc(100vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 8em;
+    color: #FFC966;
+}
+
+.btn-container button{
+    background-color: white;
+    color: #333333;
+    border: 2px solid #333333;
+}
+
