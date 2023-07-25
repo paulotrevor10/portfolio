@@ -2,7 +2,7 @@
     display: flex;
     list-style: none;
     justify-content: space-around;
-    padding: 1em;  
+    padding: 1em;
     background-color: #4d4d4d;
     margin: 0;
 
@@ -27,10 +27,11 @@ a {
     justify-content: center;
     align-items: center;
     min-height: calc(100vh);
-    
+
 }
+
 .circle-container {
-    width: 200px; 
+    width: 200px;
     height: 200px;
     border-radius: 50%;
     overflow: hidden;
@@ -41,19 +42,20 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
 }
 
-.container-name{
+.container-name {
     padding: 2em 0em 0em 0em;
     text-align: center;
 }
 
-.container-name .label-1{
+.container-name .label-1 {
     text-transform: uppercase;
     font-size: 1.3em;
 }
-.container-name .label-2{
+
+.container-name .label-2 {
     font-weight: 800;
     color: #333;
     text-transform: uppercase;
@@ -67,28 +69,27 @@ a {
     text-transform: uppercase;
 }
 
-.btn-social:hover{
+.btn-social:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease;
 }
-  
+
 /* tablets screen */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
     .wrapper {
         flex-direction: row-reverse;
         justify-content: space-evenly;
         min-height: calc(100vh - 20em);
     }
-    
-    .container-name  {
+
+    .container-name {
         text-align: left;
     }
+
     .circle-container {
-        width: 250px; 
+        width: 250px;
         height: 250px;
         border-radius: 50%;
         overflow: hidden;
     }
 }
-
-
