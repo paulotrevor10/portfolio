@@ -1,29 +1,36 @@
+
 <div id="contact-page" class="wrapper">
   <div class="contact-label">
-    <h2>Contact</h2>
-  </div>
+  <h2>Contact</h2>
+</div>
   <div class="contact-form">
-    <form>
+    <form method="POST">
       <div class="mb-3">
         <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
         <input
           type="email"
           class="form-control"
-          id="exampleFormControlInput1"
+          id="email"
           placeholder="Enter your email address"
+          [(ngModel)]="formData.email"
+          name="email"
+          required
         />
       </div>
       <div class="mb-3">
         <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
         <textarea
           class="form-control"
-          id="exampleFormControlTextarea1"
+          id="message"
           rows="3"
           placeholder="Enter a Message!"
+          [(ngModel)]="formData.message"
+          name="message"
+          required
         ></textarea>
       </div>
       <div class="btn-container">
-        <button mat-raised-button>Submit</button>
+        <button mat-raised-button (click)="submitForm()">Submit</button>
       </div>
     </form>
   </div>

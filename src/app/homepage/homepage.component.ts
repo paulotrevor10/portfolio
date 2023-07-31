@@ -30,6 +30,13 @@ export class HomepageComponent {
     }
   }
   
+  scrollToResume(): void {
+    const element = this.elementRef.nativeElement.querySelector('#resume-page');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+  
   redirectToFb() {
     const url = 'https://www.facebook.com/paulo.trevor.regacho.10';
     const win = window.open(url, '_blank');

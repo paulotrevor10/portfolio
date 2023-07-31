@@ -1,4 +1,58 @@
-mat-card {
+
+
+.skill-modal mat-card {
     background-color: white;
     width: 20em;
+}
+.skill-modal mat-card-header {
+    background-color: #FFC966;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-label h1{
+    color: white;
+    font-weight: 600;
+}
+
+.container-content {
+    padding: 2em;
+}
+
+.skill-content p{
+    text-align: center;
+}
+
+
+
+/* modal for contact */
+
+
+
+.contact-modal mat-card {
+    background-color: white;
+    width: 20em;
+}
+
+.container-header-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-label h1{
+    color: white;
+    font-weight: 600;
+}
+
+.container-content-contact {
+    padding: 2em;
+}
+
+.contact-content p{
+    text-align: center;
 }

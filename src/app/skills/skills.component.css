@@ -5,56 +5,93 @@
     padding: 2em;
 }
 
-.skill-label h2{
+.skill-label {
+    text-align: center;
+}
+
+.skill-label h2 {
     font-weight: 800;
     text-transform: uppercase;
     color: #333;
     font-size: 2em;
 }
+
 .container-skill {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-direction: column;
-    height: 70em;
+    padding: 2em;
 }
 
-.btn-skill{
-    width: 10em;
-    height: 10em;
+.btn-skill {
+    width: 8em;
+    height: 8em;
     background-color: white;
-    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;         
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 
 }
 
-.btn-skill:hover{
+.btn-skill:hover {
     transform: scale(1.2);
     transition: transform 0.3s ease;
 }
 
 .container-skill img {
-    width: 7em;
-    height: 7em;
+    width: 5em;
+    height: 5em;
 }
 
 /* tablets screen */
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
+   
     .wrapper {
-        display: block;
         padding: 4em;
-    }
-    .container-skill {
-        flex-direction: row;
-        justify-content: space-between;
-        height: 0%
+        display:block;
     }
     
-    .btn-skill{
+    h2 {
+        text-align: left;
+        padding: 0;
+    }
+    .skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+      
+    }
+    
+    .container-skill {
+        padding: 0;
+    }
+
+    .btn-skill {
         width: 5em;
         height: 5em;
     }
-    
+
     .container-skill img {
         width: 3em;
         height: 3em;
     }
+}
+
+/* desktop */
+@media only screen and (min-width: 1024px) {
+    .wrapper {
+        display: flex;
+        padding: 4em 5em 4em 5em;
+    }
+    
+    .skill-label {
+      
+        width: 80%;
+    }
+    .skills {
+     
+        width: 80%;
+    }
+
 }

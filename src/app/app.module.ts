@@ -21,6 +21,7 @@ import { SkillModalComponent } from './skill-modal/skill-modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import {MatCardModule} from '@angular/material/card';
 import { ProjectsComponent } from './projects/projects.component';
+import { HttpClientModule } from '@angular/common/http'; // Import HttpClientModule
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { ProjectsComponent } from './projects/projects.component';
     MatFormFieldModule,
     FormsModule,
     MatDialogModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

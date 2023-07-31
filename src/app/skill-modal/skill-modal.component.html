@@ -1,38 +1,163 @@
 <ng-container [ngSwitch]="id">
-  <div *ngSwitchCase="'skill-1'">
+  <div *ngSwitchCase="'skill-1'" class="skill-modal">
     <mat-card>
-      <mat-card-header>Angular</mat-card-header>
-      <mat-card-content>Simple card</mat-card-content>
+      <mat-card-header class="container-header">
+        <div class="skill-label">
+          <h1>Angular</h1>
+        </div>
+      </mat-card-header>
+      <mat-card-content class="container-content">
+        <div class="skill-content">
+          <p>
+            At Accenture, I learned the fundamentals of the Angular framework
+            during my internship. I have three months of training there, which
+            allows me to learn more about it.
+          </p>
+        </div>
+      </mat-card-content>
     </mat-card>
   </div>
-  <div *ngSwitchCase="'skill-2'">
+  <div *ngSwitchCase="'skill-2'" class="skill-modal">
     <mat-card>
-      <mat-card-header>HTML</mat-card-header>
-      <mat-card-content>Simple card</mat-card-content>
+      <mat-card-header class="container-header">
+        <div class="skill-label">
+          <h1>HTML</h1>
+        </div>
+      </mat-card-header>
+      <mat-card-content class="container-content"
+        ><div class="skill-content">
+          <p>
+            I had the opportunity to learn HTML as part of my academic
+            curriculum during my college years. However, my interest in web
+            development drove me to go beyond the classroom and into
+            self-teaching. I explored online resources, tutorials, and practical
+            projects with dedication and curiosity, expanding my knowledge
+            beyond the confines of formal education.
+          </p>
+        </div></mat-card-content
+      >
     </mat-card>
   </div>
-  <div *ngSwitchCase="'skill-3'">
+  <div *ngSwitchCase="'skill-3'" class="skill-modal">
     <mat-card>
-      <mat-card-header>CSS</mat-card-header>
-      <mat-card-content>Simple card</mat-card-content>
+      <mat-card-header class="container-header">
+        <div class="skill-label">
+          <h1>CSS</h1>
+        </div>
+      </mat-card-header>
+      <mat-card-content class="container-content"
+        ><div class="skill-content">
+          <p>
+            I began my journey into the world of web development in college by
+            learning CSS. While my formal education provided me with a solid
+            foundation, I also took the initiative to improve my skills through
+            self-study. I expanded my CSS knowledge and expertise by exploring
+            online resources, tutorials, and practical projects.
+          </p>
+        </div></mat-card-content
+      >
     </mat-card>
   </div>
-  <div *ngSwitchCase="'skill-4'">
+  <div *ngSwitchCase="'skill-4'" class="skill-modal">
     <mat-card>
-      <mat-card-header>JAVASCRIPT</mat-card-header>
-      <mat-card-content>Simple card</mat-card-content>
+      <mat-card-header class="container-header">
+        <div class="skill-label">
+          <h1>JavaScript</h1>
+        </div>
+      </mat-card-header>
+      <mat-card-content class="container-content"
+        ><div class="skill-content">
+          <p>
+            During my college years, I embarked on a journey of self-guided
+            exploration and formal education to learn JavaScript. This versatile
+            programming language's foundations were laid during my time in
+            college, where I received structured instruction and guidance from
+            experienced instructors.
+          </p>
+        </div></mat-card-content
+      >
     </mat-card>
   </div>
-  <div *ngSwitchCase="'skill-5'">
+  <div *ngSwitchCase="'skill-5'" class="skill-modal">
     <mat-card>
-      <mat-card-header>JAVA</mat-card-header>
-      <mat-card-content>Simple card</mat-card-content>
+      <mat-card-header class="container-header">
+        <div class="skill-label">
+          <h1>JAVA</h1>
+        </div>
+      </mat-card-header>
+      <mat-card-content class="container-content"
+        ><div class="skill-content">
+          <p>
+            I learned Java as part of my college curriculum and gained a solid
+            foundation in the language and its core concepts. My enthusiasm for
+            programming, however, extended beyond the classroom, prompting me to
+            embark on a self-taught journey to improve my Java skills.
+          </p>
+        </div></mat-card-content
+      >
     </mat-card>
   </div>
-  <div *ngSwitchCase="'skill-6'">
+  <div *ngSwitchCase="'skill-6'" class="skill-modal">
     <mat-card>
-      <mat-card-header>VSCODE</mat-card-header>
-      <mat-card-content>Simple card</mat-card-content>
+      <mat-card-header class="container-header">
+        <div class="skill-label">
+          <h1>Vs Code</h1>
+        </div>
+      </mat-card-header>
+      <mat-card-content class="container-content"
+        ><div class="skill-content">
+          <p>
+            Because of its versatility, user-friendly interface, and extensive
+            extension ecosystem, VS Code is an excellent choice for my code
+            editor. The powerful code editing features of the editor, such as
+            IntelliSense, code completion, and debugging tools, improve my
+            coding efficiency and productivity.
+          </p>
+        </div></mat-card-content
+      >
+    </mat-card>
+  </div>
+  <div *ngSwitchCase="'email-dialog-true'" class="contact-modal">
+    <mat-card>
+      <mat-card-header class="container-header-contact" style="background-color: #90EE90;">
+        
+        <div class="contact-label">
+          <h1>
+            Email Sent!
+          </h1>
+        </div>
+        
+      </mat-card-header> 
+      <mat-card-content  class="container-content-contact">
+        <div class="contact-content">
+          <p>
+            "Thank you for your email! I appreciate your message. Have a great
+          day!"
+          </p>
+        </div>
+        </mat-card-content
+      >
+    </mat-card>
+  </div>
+  
+  
+  <div *ngSwitchCase="'email-dialog-false'" class="contact-modal">
+    <mat-card>
+      <mat-card-header class="container-header-contact" style="background-color: #BD0020;">
+        <div class="contact-label">
+          <h1>
+            Email not sent!
+          </h1>
+        </div>
+      </mat-card-header>
+      <mat-card-content  class="container-content-contact"
+      >
+          <div class="contact-content">
+           <p> Please check your inputs if there is any typo or if it is
+            valid.</p>
+          </div>
+        </mat-card-content
+      >
     </mat-card>
   </div>
 </ng-container>

@@ -1,0 +1,55 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.resume-label h2{
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+    font-size: 2em;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.btn-container button {
+    color: #333333;
+    background-color: white;
+    text-transform: uppercase;
+    border-radius: 2em;
+    padding: 1.5em;
+}
+
+.btn-container button:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    transition: color 0.5s ease;
+    color: #FFC966;
+}
+
+.btn-container a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-container a:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    transition: color 0.5s ease;
+    color: #FFC966;
+}
+
+/* tablets screen */
+@media only screen and (min-width: 768px) {
+    .wrapper {
+       padding: 4em;; 
+    }
+}
