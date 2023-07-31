@@ -6,7 +6,6 @@
       <li><a (click)="scrollToSkill()">Skills</a></li>
       <li><a (click)="scrollToResume()">Resume</a></li>
       <li><a (click)="scrollToContact()">Contact</a></li>
- 
     </ul>
   </div>
 </header>
@@ -16,9 +15,15 @@
     <img src="assets/img/me.jpg" alt="Paulo Trevor's Profile" />
   </div>
   <div class="container-name">
-    <span class="label-1">Hello!</span><br />
-    <span class="label-1">I'm Paulo Trevor</span><br />
-    <span class="label-2">Aspiring Developer</span>
+    <div class="label-1">
+      <span >Hello!</span><br />
+      <span >I'm Paulo Trevor</span><br />
+    </div>
+
+    <div class="label-2 mt-2">
+      <span >Programmer</span>
+    </div>
+
     <div class="container-contact mt-4">
       <button mat-raised-button (click)="scrollToContact()">contact</button>
     </div>
@@ -60,7 +65,11 @@
       ></a>
 
       <!-- Github -->
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+      <a
+        class="btn btn-outline-light btn-floating m-1"
+        href="#!"
+        role="button"
+        (click)="redirectToGithub()"
         ><i class="fab fa-github"></i
       ></a>
     </section>

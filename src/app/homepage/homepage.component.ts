@@ -60,4 +60,13 @@ export class HomepageComponent {
       win.opener = null;
     }
   }
+  
+  redirectToGithub() {
+   
+    const url = 'https://github.com/paulotrevor10';
+    const win = window.open(url, '_blank');
+    if (win) {
+      win.opener = null;
+    }
+  }
 }
