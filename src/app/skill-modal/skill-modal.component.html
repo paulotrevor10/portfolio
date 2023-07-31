@@ -119,45 +119,40 @@
   </div>
   <div *ngSwitchCase="'email-dialog-true'" class="contact-modal">
     <mat-card>
-      <mat-card-header class="container-header-contact" style="background-color: #90EE90;">
-        
-        <div class="contact-label">
-          <h1>
-            Email Sent!
-          </h1>
-        </div>
-        
-      </mat-card-header> 
-      <mat-card-content  class="container-content-contact">
-        <div class="contact-content">
-          <p>
-            "Thank you for your email! I appreciate your message. Have a great
-          day!"
-          </p>
-        </div>
-        </mat-card-content
+      <mat-card-header
+        class="container-header-contact"
+        style="background-color: #90ee90"
       >
-    </mat-card>
-  </div>
-  
-  
-  <div *ngSwitchCase="'email-dialog-false'" class="contact-modal">
-    <mat-card>
-      <mat-card-header class="container-header-contact" style="background-color: #BD0020;">
         <div class="contact-label">
-          <h1>
-            Email not sent!
-          </h1>
+          <h1>Email Sent!</h1>
         </div>
       </mat-card-header>
-      <mat-card-content  class="container-content-contact"
+      <mat-card-content class="container-content-contact">
+        <div class="contact-content">
+          <p>Thank you for your email! Have a great day!</p>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div *ngSwitchCase="'email-dialog-false'" class="contact-modal">
+    <mat-card>
+      <mat-card-header
+        class="container-header-contact"
+        style="background-color: #bd0020"
       >
-          <div class="contact-content">
-           <p> Please check your inputs if there is any typo or if it is
-            valid.</p>
-          </div>
-        </mat-card-content
-      >
+        <div class="contact-label">
+          <h1>Email not sent!</h1>
+        </div>
+      </mat-card-header>
+      <mat-card-content class="container-content-contact">
+        <div class="contact-content">
+          <p>
+            Please check your inputs if you fill all out or if there is any typo
+            or it is valid.
+          </p>
+        </div>
+      </mat-card-content>
     </mat-card>
   </div>
 </ng-container>

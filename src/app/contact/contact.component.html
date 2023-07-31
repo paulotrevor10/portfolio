@@ -8,11 +8,23 @@
       <div class="mb-3">
         <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
         <input
+          type="text"
+          class="form-control"
+          id="fullName"
+          placeholder="Enter your full name"
+          [(ngModel)]="fullName"
+          name="fullName"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+        <input
           type="email"
           class="form-control"
           id="email"
           placeholder="Enter your email address"
-          [(ngModel)]="formData.email"
+          [(ngModel)]="email"
           name="email"
           required
         />
@@ -24,7 +36,7 @@
           id="message"
           rows="3"
           placeholder="Enter a Message!"
-          [(ngModel)]="formData.message"
+          [(ngModel)]="message"
           name="message"
           required
         ></textarea>
